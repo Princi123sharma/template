@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    /* css reset  */
+    body{
+       margin:0px;
+       padding:0px;
+       background: url('img/pg.jpg');
+       background-size: cover;
+       color:azure;
+       font-style: italic;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       
+    }
+    .left{
+        position: absolute;
+        left:34px;
+        top:22px;
+       /* border:2px solid green; */
+       display:inline-block;
+    }
+    .left img{
+      width:50px;
+        filter: invert(100%);
+        border-radius: 100px;
+    }
+    .left div{
+       text-align: center;
+       font-size: 23px;
+       color:white;
+       font-style: italic;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+      
+    }
+    .mid{
+        display: block;
+        width:45%;
+        margin:22px auto;
+        /* border:2px solid red; */
+    }
+    .right{
+        position: absolute;
+        right:25px;
+        top:160px;
+        /* border:2px solid yellow; */
+        display:inline-block;
+    }
+    .right div{
+        margin-top: 23px;
+        font-size: 25px;
+        color: rgb(254, 254, 254);
+    }
+    .navbar li{
+        display:inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding:34px 22px;
+    }
+    .navbar li a:hover,.navbar li a:active{
+        color:rgb(205, 191, 191);
+        text-decoration: underline;
+        
+    }
+    .conatiner{
+        /* border:2px solid blue; */
+        display: inline-block;
+       margin:106px 80px;
+       padding: 80px;
+       width:35%;
+       border-radius: 14px;
+    }
+    .conatiner li a{
+        text-decoration: none;
+        color: white;
+        font-style: italic;
+        font-size: 25px;
+    }
+    .conatiner li a:hover{
+        color: rgb(101, 92, 92);
+    }
+
+    .conatiner li{
+        margin:2px 2px;
+        padding:2px 2px;
+        
+    }
+    .conatiner h1{
+        text-align: center;
+        margin:23px;
+        color: rgb(250, 241, 241);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .right form input {
+        margin-left: 50%;
+        width:50%;  
+        text-align: center; 
+        border:2px solid black;
+        color:black;
+        font-size: 15px;
+        font-style: italic;
+        border-radius: 10px;
+    }
+    .btn{
+        border:2px solid whitesmoke;
+        width:20%;
+        margin-left: 65%;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        font-style: italic;
+    }
+    .btn:hover{
+        background-color: rgb(92, 88, 88);
+    }
+   
+    
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+       <img src="img/bg.jpg" alt="this is a logo">
+       <div>
+        Doorwe
+       </div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+       <ul class="navbar">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Login</a></li>
+       </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+       <div>
+        <pre>
+            Ask your,
+                 Doubts ??     
+        </pre>
+        <form action="action.php">
+           <input type="textarea" placeholder="Ask your doubts">
+        </form>
+        <button class="btn">Submit</button>
+        </div>
+    </div>
+    </header>
+    <div class="conatiner">
+        <h1>We provide solution's related to</h1>
+        <ul>
+            <li><a href="#">Personal issues</a></li>
+            <li><a href="#">Mental issues</a></li>
+            <li><a href="#">Pyschological issues</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Guidance</a></li>
+        </ul>
+    </div>
+</body>
+</html>
